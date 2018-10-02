@@ -1,9 +1,20 @@
 body{
   background-image: url("../images/fullbloom.png");
+
+}
+
+p{
+font-family: 'Pacifico', cursive;
 }
 
 article{
   text-align: center;
+}
+
+.dogs{
+  color: brown;
+  font-size: 200px;
+  text-align: left;
 }
 
 header{
