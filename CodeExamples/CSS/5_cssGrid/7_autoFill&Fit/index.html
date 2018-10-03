@@ -1,0 +1,113 @@
+<!DOCTYPE>
+<html lang="en">
+<head>
+	<title>Auto Fit & Fill</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width-initial-scale=1.0">
+</head>
+<body>
+	<h1> Auto Fill </h1>
+	<div class="container">
+		<div class="item item1">a</div>
+		<div class="item item2">b</div>
+		<div class="item item3">c</div>
+		<div class="item item4">d</div>
+		<div class="item item5">e</div>
+		<div class="item item6">f</div>
+		<div class="item item7">g</div>
+		<div class="item item8">h</div>
+		<div class="item item9">i</div>
+		<div class="item item10">j</div>
+		<div class="item item11">k</div>
+		<div class="item item12">l</div>
+	</div>
+
+	<h1> Auto Fit </h1>
+		<div class="container2">
+		<div class="item item1">a</div>
+		<div class="item item2">b</div>
+		<div class="item item3">c</div>
+		<div class="item item4">d</div>
+		<div class="item item5">e</div>
+		<div class="item item6">f</div>
+		<div class="item item7">g</div>
+		<div class="item item8">h</div>
+		<div class="item item9">i</div>
+		<div class="item item10">j</div>
+		<div class="item item11">k</div>
+		<div class="item item12">l</div>
+	</div>
+
+	<h1>The Difference: Auto Fill </h1>
+		<div class="container3">
+		<div class="item item1">a</div>
+		<div class="item item2">b</div>
+		<div class="item item3">c</div>
+		<div class="item itemZ">💩</div>
+
+	</div>
+
+	<h1>The Difference: Auto Fit </h1>
+		<div class="container4">
+		<div class="item item1">a</div>
+		<div class="item item2">b</div>
+		<div class="item item3">c</div>
+		<div class="item itemZ">💩</div>
+
+	</div>
+
+<style>
+	/* Auto Fill: adjust item location based on screen size. */
+	.container{
+		display: grid;
+		grid-gap: 20px;
+		border-style: solid;
+		border-width: medium;
+		border-color: green;
+		/* here autofill is used to populate the items across the screen window size. */
+		grid-template-columns: repeat(auto-fill, 100px);
+	}
+
+	.container2{
+		display: grid;
+		grid-gap: 20px;
+		border-style: solid;
+		border-width: medium;
+		border-color: green;
+		/* here autofill is used to populate the items across the screen window size. */
+		grid-template-columns: repeat(auto-fit, 100px);
+	}
+
+	.container3{
+		display: grid;
+		grid-gap: 20px;
+		border-style: solid;
+		border-width: medium;
+		border-color: green;
+		/* here autofill will stretch out the last element to the end of the track.. */
+		grid-template-columns: repeat(auto-fill, 150px);
+	}
+
+	.container4{
+		display: grid;
+		grid-gap: 20px;
+		border-style: solid;
+		border-width: medium;
+		border-color: green;
+		/* here autofit will reassign the end of the track to the location of the last element. */
+		grid-template-columns: repeat(auto-fit, 150px);
+	}
+
+
+	.item{
+		background-color: gold;
+	}
+
+	.itemZ{
+		grid-column: auto / -1;
+	}
+
+</style>
+
+</body>
+</html>

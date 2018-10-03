@@ -1,0 +1,61 @@
+<!doctype>
+<html>
+
+<head>
+		<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width-initial-scale=1.0">
+</head>
+
+
+<body>
+	<h1>Using Auto Row</h1>
+	<div class="container">
+		<div class="item">1. 200px</div>
+		<div class="item">2. 400px</div>
+		<div class="item">3. 200px</div>
+		<div class="item">4.</div>
+		<div class="item">5.</div>
+		<div class="item">6.</div>
+		<div class="item">7.</div>
+		<div class="item">8.</div>
+		<div class="item">9.</div>
+	</div>
+
+	<h1>Auto Rows Multiple size patterns</h1>
+		<div class="container2">
+		<div class="item">1. 200px</div>
+		<div class="item">2. 400px</div>
+		<div class="item">3. 200px</div>
+		<div class="item">4.</div>
+		<div class="item">5.</div>
+		<div class="item">6.</div>
+		<div class="item">7.</div>
+		<div class="item">8.</div>
+		<div class="item">9.</div>
+	</div>
+
+
+<style>
+	.container{
+		display: grid;
+		grid-template-rows: 50px 100px;
+		grid-gap: 20px;
+
+		/*try removing the below line to see what happens: The additional rows will have no size *; */
+		grid-auto-rows: 30px
+	}
+	.item{
+		background-color: red;
+	}
+
+	.container2{
+		display: grid;
+		grid-gap: 20px;
+		grid-template-rows: 50px 100px;
+		grid-auto-rows: 30px 70px 100px; 
+	}
+</style>
+
+</body>
+</html>
+

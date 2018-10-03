@@ -1,0 +1,47 @@
+
+<!DOCTYPE>
+<html>
+<head>
+	<title></title>
+		<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width-initial-scale=1.0">
+</head>
+<body>
+
+<div class="container">
+	<div class="item">1</div>
+	<div class="item">2</div>
+	<div class="item">3</div>
+	<div class="item">4</div>
+	<div class="item">5</div>
+	<div class="item">6</div>
+	<div class="item">7</div>
+	<div class="item">8</div>
+	<div class="item">9</div>
+	<div class="item">10</div>
+	<div class="item">11</div>
+</div>
+
+
+<style>
+	.container{
+		display: grid;
+		grid-gap: 20px;
+		border-color: 10px solid var(--yellow);
+		/* fr (fractional unit) use this instead of percentages to avoid complicated issues down the road.  */
+		grid-template-columns: 1fr 1fr 1fr 2fr; 
+
+		/*the difference between using auto and using fr unit is that auto will resize to the actual size of content */
+		/* grid-template-columns: auto 1fr 1fr; */
+	}
+
+	.item{
+		background-color: green;
+		height: 100px;
+	}
+</style>
+
+
+</body>
+</html>
+

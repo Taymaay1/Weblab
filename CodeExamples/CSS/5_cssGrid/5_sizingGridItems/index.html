@@ -1,0 +1,56 @@
+<!DOCTYPE>
+<html>
+<head>
+	<title></title>
+		<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width-initial-scale=1.0">
+</head>
+<body>
+	<div class="container">
+		<div class="item item1">a</div>
+		<div class="item item2">b</div>
+		<div class="item item3">c</div>
+		<div class="item item4">d</div>
+		<div class="item item5">e</div>
+		<div class="item item6">f</div>
+		<div class="item item7">g</div>
+		<div class="item item8">h</div>
+		<div class="item item9">i</div>
+		<div class="item item10">j</div>
+		<div class="item item11">k</div>
+		<div class="item item12">l</div>
+	</div>
+
+	<style>
+		.container{
+			display: grid;
+			grid-gap: 20px;
+			grid-template-columns: repeat(4, 1fr);
+		}
+
+		.item{
+			background-color: yellow;
+			height: 100px;
+		}
+
+		.item8{
+			background-color: pink;
+
+			/* This designates  how many column the specific item spans */
+			grid-row: span 2;
+
+			grid-column: span 3;
+
+		}
+
+		.item1{
+			background-color: orange;
+			grid-column: span 2;
+			/* center text in a div */
+			
+		}
+
+	</style>
+
+</body>
+</html>

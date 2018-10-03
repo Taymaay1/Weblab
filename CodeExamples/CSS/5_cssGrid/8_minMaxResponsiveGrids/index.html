@@ -1,0 +1,62 @@
+<!DOCTYPE>
+<html lang="en">
+<head>
+	<title>Auto Fit & Fill</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width-initial-scale=1.0">
+</head>
+<body>
+<h1>The Difference: Auto Fill min-max </h1>
+		<div class="container">
+		<div class="item item1">a</div>
+		<div class="item item2">b</div>
+		<div class="item item3">c</div>
+		<div class="item item4">💩 is a Savage Beast of the greated Savagery ever known</div>
+
+	</div>
+
+	<h1>The Difference: Auto Fit min-max </h1>
+		<div class="container2">
+		<div class="item item1">a</div>
+		<div class="item item2">b</div>
+		<div class="item item3">c</div>
+		<div class="item item4">💩 is a Savage Beast of the greated Savagery ever known</div>
+
+	</div>
+
+
+	<style>
+
+
+		/* minmax(greater than > or equal to, less than < or equal to) */
+
+	/* autofill will keep the grid items */
+		.container{
+			display: grid;
+			grid-gap: 20px;
+			grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+		}
+
+			/* autofit will resize the grid to fit the items */
+			.container2{
+			display: grid;
+			grid-gap: 20px;
+			grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+		}
+
+				/* autofit will resize the grid to fit the items */
+			.container3{
+			display: grid;
+			grid-gap: 20px;
+			grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+		}
+
+
+		.item{
+			background-color: violet;
+			font-size: 24px;
+
+		}
+	</style>
+</body>
+</html>
